@@ -30,14 +30,15 @@ namespace WPF_Forms.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _mainFrame.Navigate(new UserInfo());
-           
+
         }
 
-        private void Tacnical_inventorization(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            _mainFrame.Visibility = Visibility.Visible;
             _mainFrame.Navigate(new UserInfo());
-            
-            
+            Grid.Visibility = Visibility.Collapsed;
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
