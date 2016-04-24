@@ -1,0 +1,111 @@
+﻿<Window x:Class="WPF_Forms.Views.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainMenu"
+        Width="600"
+        Height="400"
+        Background="#627aac"
+        Icon="/WPF_Forms;component/favicon.ico">
+    <DockPanel>
+        <Frame x:Name="_mainFrame">
+            
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Row="0"
+                          Margin="5"
+                          Background="#899bc1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"
+                               Width="40"
+                               Height="40"
+                               Source="/WPF_Forms;component/gear.ico" />
+                        <Button Grid.Row="1"
+                                Margin="20"
+                                Click="Tacnical_inventorization">
+                            Техническая инвентаризация
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="0"
+                          Grid.Column="1"
+                          Margin="5"
+                          Background="#899bc1">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Image Grid.Row="0"
+                               Width="40"
+                               Height="40"
+                               Source="/Resources/clipboard.ico" />
+                        <Button Grid.Row="1"
+                                Margin="20"
+                                Click="Button_Click_4">
+                            Инструкция
+                        </Button>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="1"
+                      Margin="5"
+                      Background="#899bc1">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0"
+                           Width="40"
+                           Height="40"
+                           Source="/Resources/check.ico" />
+                    <Button Grid.Row="1"
+                            Margin="20"
+                            Click="Button_Click_6">
+                        Проверка хaрактеристик
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="1"
+                      Grid.Column="1"
+                      Margin="5"
+                      Background="#899bc1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0"
+                           Width="40"
+                           Height="40"
+                           Source="/Resources/compose.ico" />
+                    <Button Grid.Row="1"
+                            Margin="20"
+                            Click="Button_Click_5">
+                        Прейскурант
+                    </Button>
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>

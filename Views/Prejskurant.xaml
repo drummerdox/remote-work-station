@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPF_Forms.Views.Prejskurant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Prejskurant"
+        Width="600"
+        Height="400">
+    <Grid>
+        <DocumentViewer Margin="0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Document="{Binding Path=DocText,
+                                           UpdateSourceTrigger=PropertyChanged}" />
+    </Grid>
+</Window>

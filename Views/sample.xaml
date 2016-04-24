@@ -1,0 +1,79 @@
+﻿<Window x:Class="WPF_Forms.Views.sample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="sample"
+        Width="600"
+        Height="400"
+        Background="#627aac">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0" Background="#899bc1" Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0"
+                           Width="40"
+                           Height="40"
+                           Source="/WPF_Forms;component/gear.ico" />
+                    <Button Grid.Row="1" Margin="20">Техническая инвентаризация</Button>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="1" Background="#899bc1" Margin="5">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0"
+                           Width="40"
+                           Height="40"
+                           Source="/Resources/clipboard.ico" />
+                    <Button Grid.Row="1" Margin="20">Инструкция</Button>
+                </Grid>
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="1" Background="#899bc1" Margin="5">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Width="40"
+                       Height="40"
+                       Source="/Resources/check.ico" />
+                <Button Grid.Row="1" Margin="20">Проверка хaрактеристик</Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" Background="#899bc1" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Width="40"
+                       Height="40"
+                       Source="/Resources/compose.ico" />
+                <Button Grid.Row="1" Margin="20">Прейскурант</Button>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>

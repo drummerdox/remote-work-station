@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPF_Forms.Views.Welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Welcome"
+        Width="400"
+        Height="250"
+        Background="#627aac"
+        Icon="/WPF_Forms;component/favicon.ico">
+    <Grid>
+
+        <TextBlock x:Name="WelcomeHeading"
+                   Height="23"
+                   Margin="10,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontSize="17"
+                   FontStretch="ExtraCondensed"
+                   Text="Welcome:"
+                   TextElement.Foreground="White" />
+        <TextBlock x:Name="TextBlockName"
+                   Height="23"
+                   Margin="90,10,0,0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   FontSize="15"
+                   FontStretch="ExtraCondensed"
+                   TextElement.Foreground="White" />
+        <Button Width="75"
+                Margin="165,109,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Button_Click_1"
+                Content="Lets work!" />
+    </Grid>
+</Window>

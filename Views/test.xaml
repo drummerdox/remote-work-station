@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPF_Forms.Views.test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="test"
+        Width="800"
+        Height="480">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <Grid>
+                    <TextBlock TextAlignment="Center">
+                        <Run Text="sdfsdfsdfsdsfsdfsdfsdfsdf" />
+                        <TextBlock.LayoutTransform>
+                            <RotateTransform Angle="90" />
+                        </TextBlock.LayoutTransform>
+                    </TextBlock>
+                </Grid>
+                <Grid>
+                    <TextBlock>sdfsdfsdfsdfsdfsdf</TextBlock>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" />
+        </Grid>
+    </Grid>
+</Window>

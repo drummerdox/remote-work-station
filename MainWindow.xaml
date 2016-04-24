@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPF_Forms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Name="framename"
+        Title="MainWindow"
+        Width="800"
+        Height="480"
+        Icon="favicon.ico">
+    <Grid>
+        <Frame x:Name="qweer"
+               Content="Frame"
+               NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>
