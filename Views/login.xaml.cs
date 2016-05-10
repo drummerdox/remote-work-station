@@ -36,7 +36,7 @@ namespace WPF_Forms.Views
             }
             else if (!Regex.IsMatch(textBoxEmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
             {
-                errormessage.Text = "Enter a valid email.";
+                errormessage.Text = "Логин не корректен.";
                 textBoxEmail.Select(0, textBoxEmail.Text.Length);
                 textBoxEmail.Focus();
             }

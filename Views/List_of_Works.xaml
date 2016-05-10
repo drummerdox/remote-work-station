@@ -29,15 +29,15 @@
 
             <ListBox Margin="5">
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Image Width="50" Source="*.png" />
+                    <Image Width="50"  />
                     <Label VerticalContentAlignment="Center">508e1</Label>
                 </StackPanel>
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Image Width="50" Source="**.png" />
+                    <Image Width="50"  />
                     <Label VerticalContentAlignment="Center">65f7bb</Label>
                 </StackPanel>
                 <StackPanel Margin="5" Orientation="Horizontal">
-                    <Image Width="50" Source="*.png" />
+                    <Image Width="50"  />
                     <Label VerticalContentAlignment="Center">5f7c15</Label>
                 </StackPanel>
             </ListBox>

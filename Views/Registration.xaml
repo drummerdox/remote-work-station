@@ -15,12 +15,12 @@
                    VerticalAlignment="Top"
                    FontSize="17"
                    FontStretch="ExtraCondensed"
-                   Text="Registration:"
+                   Text="Регистрация:"
                    TextElement.Foreground="White" />
         <!--  Button as a Link button using style  -->
         <Button Margin="451,5,12,288"
                 Click="Login_Click"
-                Content="Login"
+                Content="Вход"
                 Cursor="Hand"
                 TextElement.Foreground="White">
             <Button.Template>
@@ -64,49 +64,49 @@
                        Margin="67,20,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       TextElement.Foreground="White"
-                       Text="First Name:" />
+                       Text="Имя:"
+                       TextElement.Foreground="White" />
             <TextBlock Name="textBlockLastName"
-                       TextElement.Foreground="White"
                        Width="110"
                        Height="23"
                        Margin="67,50,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Text="Last Name:" />
+                       Text="Фамилия:"
+                       TextElement.Foreground="White" />
             <TextBlock Name="textBlockEmailId"
-                       TextElement.Foreground="White"
                        Width="110"
                        Height="23"
                        Margin="67,80,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Text="Email" />
+                       Text="Email"
+                       TextElement.Foreground="White" />
             <TextBlock Name="textBlockPassword"
-                       TextElement.Foreground="White"
                        Width="110"
                        Height="23"
                        Margin="67,107,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Text="Password:" />
+                       Text="Пароль:"
+                       TextElement.Foreground="White" />
             <TextBlock Name="textBlockConfirmPwd"
-                       TextElement.Foreground="White"
                        Grid.RowSpan="2"
                        Width="110"
                        Height="23"
                        Margin="67,136,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Text="ConfirmPassword:" />
+                       Text="Подтверждение:"
+                       TextElement.Foreground="White" />
             <TextBlock Name="textBlockAddress"
-                       TextElement.Foreground="White"
                        Width="110"
                        Height="23"
                        Margin="67,166,0,0"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Top"
-                       Text="Address" />
+                       Text="Адрес"
+                       TextElement.Foreground="White" />
 
             <TextBox Name="textBoxFirstName"
                      Width="222"
@@ -153,7 +153,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
                     Click="Submit_Click"
-                    Content="Submit" />
+                    Content="ОК" />
             <Button Name="button2"
                     Width="70"
                     Height="23"
@@ -161,7 +161,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
                     Click="button2_Click"
-                    Content="Reset" />
+                    Content="Сброс" />
             <Button Name="button3"
                     Width="70"
                     Height="23"
@@ -169,7 +169,7 @@
                     HorizontalAlignment="Right"
                     VerticalAlignment="Top"
                     Click="button3_Click"
-                    Content="Cancel" />
+                    Content="Назад" />
         </Grid>
     </Grid>
 </Window>

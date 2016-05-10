@@ -1,10 +1,11 @@
 ﻿<Window x:Class="WPF_Forms.Views.login"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Login"
+        Title="Вход в систему"
         Width="525"
         Height="350"
-        Background="#627aac" Icon="/WPF_Forms;component/favicon.ico">
+        Background="#627aac"
+        Icon="/WPF_Forms;component/favicon.ico">
     <Grid>
         <TextBlock Name="LoginHeading"
                    Height="23"
@@ -13,7 +14,7 @@
                    VerticalAlignment="Top"
                    FontSize="17"
                    FontStretch="ExtraCondensed"
-                   Text="Login:"
+                   Text="Вход в систему:"
                    TextElement.Foreground="White" />
         <TextBlock Name="textBlockHeading"
                    Height="50"
@@ -30,7 +31,7 @@
                            FontSize="14"
                            FontStyle="Normal"
                            TextElement.Foreground="White">
-                    Register
+                    Регистрация
                 </Hyperlink>
             </TextBlock>
             <!--  end textblock as a hyperlink  -->
@@ -51,7 +52,7 @@
                    Margin="58,168,0,0"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   Text="Password"
+                   Text="Пароль"
                    TextElement.Foreground="White" />
         <TextBox Name="textBoxEmail"
                  Width="247"
@@ -72,7 +73,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="button1_Click"
-                Content="Login" />
+                Content="Войти" />
         <TextBlock x:Name="errormessage"
                    Width="247"
                    Height="23"

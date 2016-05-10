@@ -18,6 +18,7 @@ namespace WPF_Forms.Views
     /// <summary>
     /// Interaction logic for UserInfo.xaml
     /// </summary>
+   
     public partial class UserInfo : Page
     {
         public UserInfo()
@@ -32,6 +33,29 @@ namespace WPF_Forms.Views
             //_mainFrame.Navigate(new WorksAdding());
         }
 
-       
+        private void close(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Windows[0].Close();
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender,
+         SelectionChangedEventArgs e)
+        {
+            // ... Get DatePicker reference.
+            var picker = sender as DatePicker;
+
+            // ... Get nullable DateTime from SelectedDate.
+            DateTime? date = picker.SelectedDate;
+            if (date == null)
+            {
+                // ... A null object.
+                this.Title = "No date";
+            }
+            else
+            {
+                // ... No need to display the time.
+                this.Title = date.Value.ToShortDateString();
+            }
+        }
     }
 }

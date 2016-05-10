@@ -8,15 +8,71 @@
       d:DesignHeight="400"
       d:DesignWidth="900"
       mc:Ignorable="d">
-    <Grid Width="900"
-          HorizontalAlignment="Left">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Border BorderBrush="#3B5998" BorderThickness="3">
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Grid Grid.Column="0">
+                        <TextBlock Grid.Column="0"
+                                   Margin="5"
+                                   VerticalAlignment="Center"
+                                   FontWeight="Bold"
+                                   TextAlignment="Left"
+                                   TextElement.Foreground="WhiteSmoke">
+                            Полевые работы
+                        </TextBlock>
+                    </Grid>
 
-        <StackPanel>
+                    <Grid Grid.Column="1" Margin="3">
+                        <Button Width="40" Height="40">
+                            <Button.Background>
+
+                                <ImageBrush ImageSource="/Resources/clipboard.ico" />
+                            </Button.Background>
+                        </Button>
+
+                    </Grid>
+                    <Grid Grid.Column="2"
+                          Width="100"
+                          Margin="3">
+                        <Button Width="40" Height="40">
+                            <Button.Background>
+
+                                <ImageBrush ImageSource="/Resources/frames.ico" />
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Column="3" Margin="3">
+                        <Button Width="40" Height="40">
+                            <Button.Background>
+
+                                <ImageBrush ImageSource="/Resources/check.ico" />
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
 
             <ItemsControl Name="lstMachineFunctions">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel>
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
@@ -35,83 +91,121 @@
                                     <RowDefinition />
 
                                 </Grid.RowDefinitions>
+
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="1"
+                                           Margin="1"
                                            Text="№ позиции"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="2"
+                                           Margin="1"
                                            Text="Наименование работ"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="3"
+                                           Margin="1"
                                            Text="Единица измерения"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="4"
-                                           Text="Кол-во"
+                                           Margin="1"
+                                           Text="Количество"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="5"
-                                           Text="тариф за ед."
+                                           Margin="1"
+                                           Text="Тариф за ед."
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="6"
-                                           Text="тариф за г.5x г.6"
+                                           Margin="1"
+                                           Text="Тариф за г.5x г.6"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="7"
+                                           Margin="1"
                                            Text="Сложность Назначние"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <TextBlock Grid.Row="0"
                                            Grid.Column="8"
+                                           Margin="1"
                                            Text="Сложность Коэф"
+                                           TextAlignment="Center"
                                            TextElement.Foreground="White" />
                                 <Button Grid.Row="1"
                                         Grid.Column="0"
+                                        Margin="1"
                                         Click="OnDeleteMachineFunction">
                                     X
                                 </Button>
                                 <TextBox Grid.Row="1"
                                          Grid.Column="1"
+                                         Margin="1"
                                          Text="{Binding Name}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="2"
-                                         Text="{Binding Machines}" />
+                                         Margin="1"
+                                         Text="{Binding 12}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="3"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="4"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="5"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="6"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="7"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="8"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                                 <TextBox Grid.Row="1"
                                          Grid.Column="8"
+                                         Margin="1"
                                          Text="{Binding Sdf}" />
                             </Grid>
                         </StackPanel>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0"
+                        Width="100"
+                        Click="OnAddMachineFunction"
+                        Content="Добавить поле" />
+                <Button Grid.Column="1"
+                        Width="100"
+                        Content="Загрузка данных" />
 
-            <Button HorizontalAlignment="Left"
-                    VerticalAlignment="Bottom"
-                    Click="OnAddMachineFunction">
-                Add Machine Function
-            </Button>
-            <Button Height="21"
-                    Content="Calculate" Margin="0,5,777,0" />
+                <Button Grid.Column="2"
+                        Width="100"
+                        Content="Посчитать" />
+            </Grid>
+
 
         </StackPanel>
     </Grid>

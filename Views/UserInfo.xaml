@@ -34,13 +34,15 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <StackPanel Margin="5" Orientation="Horizontal">
+            <StackPanel Margin="5"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
                 <Grid Margin="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Column="0"><Run Text="Наряд: " />
+                    <TextBlock   Grid.Column="0"><Run Text="Наряд: " />
                     </TextBlock>
                     <TextBox Grid.Column="1" MinWidth="150" />
                 </Grid>
@@ -60,13 +62,18 @@
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Column="0"><Run Text="от: " />
                     </TextBlock>
-                    <TextBox Grid.Column="1" MinWidth="150" />
+                    
+                    <Grid Grid.Column="1">
+                        <DatePicker HorizontalAlignment="Center"
+		    
+		    SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+                    </Grid>
                 </Grid>
             </StackPanel>
         </Grid>
 
 
-        <GroupBox Grid.Row="2" Header="User Info">
+        <GroupBox Grid.Row="2" Header="Данные пользователя">
             <Grid Margin="5">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -117,8 +124,8 @@
                             Orientation="Vertical">
                     <Grid Margin="5">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" MinWidth="150"/>
+                            <ColumnDefinition Width="*" MinWidth="50"/>
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0"><Run Text="Дата поступления аванса:" />
                         </TextBlock>
@@ -159,9 +166,11 @@
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0"
                     Click="Button_Click"
-                    Content="Save and Next" />
-            <Button Grid.Column="1" Content="Reset" />
-            <Button Grid.Column="2" Content="Cancel" />
+                    Content="Далее" />
+            <Button Grid.Column="1" Content="Сброс" />
+            <Button Grid.Column="2"
+                    Click="close"
+                    Content="Назад" />
         </Grid>
     </Grid>
 </Page>
